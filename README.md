@@ -9,7 +9,8 @@ This plugin relies on dlang tools like `dcd-server`, `dcd-client` and `dub` to p
 
 ## Plugin Install
 
-- You have to install both `ncm2` and `ncm2-d`. `nvim-yarp` is only needed to provide compatibility with vim 8.
+- You have to install both `ncm2` and `ncm2-d`.
+- `nvim-yarp` is only needed to provide compatibility with vim 8.
 
 If you're using dein:
 
