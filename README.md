@@ -18,7 +18,7 @@ If you're using dein:
 
 ```
 call dein#add('ncm2/ncm2')
-call dein#add('viniarck/ncm2-d')
+call dein#add('ncm2/ncm2-d')
 call dein#add('roxma/nvim-yarp')
 
 " enable ncm2 for all buffers and set completeopt
@@ -30,7 +30,7 @@ If you're using vim-plug:
 
 ```
 Plug 'ncm2/ncm2'
-Plug 'viniarck/ncm2-d'
+Plug 'ncm2/ncm2-d'
 Plug 'roxma/nvim-yarp'
 
 " enable ncm2 for all buffers and set completeopt
