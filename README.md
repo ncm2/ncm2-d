@@ -1,13 +1,13 @@
 
 ## ncm2-d
 
-neovim/vim [ncm2](https://github.com/ncm2/ncm2) autocompletion source for dlang.
+neovim/vim [ncm2](https://github.com/ncm2/ncm2) autocompletion source for [D](https://www.dlang.org).
 
 ![screenshot](https://media.giphy.com/media/2zcmU3OBohhblYv4HC/giphy.gif)
 
-## Install d
+## Install D
 
-This plugin relies on dlang tools like `dcd-server`, `dcd-client` and `dub` to provide autocompletion. Make sure you have them available in your PATH.
+This plugin relies on D tools like `dcd-server`, `dcd-client` and `dub` to provide autocompletion. Make sure you have them available in your PATH.
 
 ## Plugin Install
 
