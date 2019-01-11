@@ -1,13 +1,13 @@
-if exists("")
+if get(s:, 'ncm2_d', 0)
   finish
 endif
 let s:ncm2_d = 1
 
-let g:ncm2_d#dcd_client_bin = get(g:, 'g:ncm2_d#dcd_client_bin', 'dcd-client')
-let g:ncm2_d#dcd_client_args = get(g:, 'g:ncm2_d#dcd_client_args', [''])
-let g:ncm2_d#dcd_server_bin = get(g:, 'g:ncm2_d#dcd_server_bin', 'dcd-server')
-let g:ncm2_d#dcd_server_args = get(g:, 'g:ncm2_d#dcd_server_args', [''])
-let g:ncm2_d#dcd_autostart_server = get(g:, 'g:ncm2#dcd_autostart_server', 1)
+let g:ncm2_d#dcd_client_bin = get(g:, 'ncm2_d#dcd_client_bin', 'dcd-client')
+let g:ncm2_d#dcd_client_args = get(g:, 'ncm2_d#dcd_client_args', [''])
+let g:ncm2_d#dcd_server_bin = get(g:, 'ncm2_d#dcd_server_bin', 'dcd-server')
+let g:ncm2_d#dcd_server_args = get(g:, 'ncm2_d#dcd_server_args', [''])
+let g:ncm2_d#dcd_autostart_server = get(g:, 'ncm2#dcd_autostart_server', 1)
 
 let g:ncm2_d#proc = yarp#py3('ncm2_d')
 
