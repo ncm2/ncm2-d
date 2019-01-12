@@ -59,7 +59,11 @@ class Source(Ncm2Source):
         offset = self.lccol2pos(lnum, bcol, src)
 
         dcd_client = find_executable(data["dcd_client_bin"])
-        args = [dcd_client, "-x", "-c" + str(offset)]
+        dcd_client_args = data["dcd_client_args"]
+        args = [dcd_client]
+        if dcd_client_args and dcd_client_args != [""]:
+            args.extend(dcd_client_args)
+        args.extend(["-x", "-c" + str(offset)])
         args.extend(data["dcd_inc_dirs"])
         proc = subprocess.Popen(
             args=args,
