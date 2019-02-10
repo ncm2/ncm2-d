@@ -22,7 +22,8 @@ def start_dcd_server():
             f_args.append(item)
         return f_args
 
-    server_args = list(vim.eval("g:ncm2_d#dcd_server_args"))
+    args_str = vim.eval("g:ncm2_d#dcd_server_args_str")
+    server_args = args_str.split()
     cmd = ["dcd-server"]
     server_args = filter_nondirs(server_args)
     cmd.extend(server_args)
